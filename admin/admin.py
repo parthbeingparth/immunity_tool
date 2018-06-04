@@ -1,0 +1,5 @@
+print("\n\nAdmin process running! \n\nWaiting for clients\n\n-------------------------------------\n ")
+print("1 client connected 192.218.17.100\n\n")
+print("---------------------------------------\n Handshake succesfull \n---------------------------------------")
+print("\n|########################################|100%% done")
+print("\nData received succesfully\n\n")
