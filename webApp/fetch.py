@@ -1,4 +1,6 @@
 import requests
+import json
 
-data = requests.get('https://protech-api.herokuapp.com/list')
-print (data.text)
+temp = requests.get('https://protech-api.herokuapp.com/list')
+data = json.loads(temp.text)
+print (data["data"][0])
