@@ -5,6 +5,7 @@ from tabledef import *
 engine = create_engine('sqlite:///tutorial.db', echo=True)
  
 app = Flask(__name__)
+app.secret_key = os.urandom(12)
  
 @app.route('/')
 def home():
@@ -35,5 +36,4 @@ def logout():
     return home()
  
 if __name__ == "__main__":
-    app.secret_key = os.urandom(12)
     app.run(debug=True,host='0.0.0.0', port=4000)
