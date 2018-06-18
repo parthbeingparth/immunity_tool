@@ -4,4 +4,6 @@ See "admin" for admin related script and files and "client" for client related s
 
 "webApp" contains all the files realted to web-app. It is at the initial stage currently.
 
-Will update a proper readme soon.
+For any doubts or queries contact parth.verma96@gmail.com
+
+Full readme will be updated soon. Stay tuned!
