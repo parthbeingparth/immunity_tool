@@ -16,15 +16,7 @@ def home():
  
 @app.route('/login', methods=['POST'])
 def do_admin_login():
- 
-    POST_USERNAME = str(request.form['username'])
-    POST_PASSWORD = str(request.form['password'])
- 
-    Session = sessionmaker(bind=engine)
-    s = Session()
-    query = s.query(User).filter(User.username.in_([POST_USERNAME]), User.password.in_([POST_PASSWORD]) )
-    result = query.first()
-    if result:
+    if request.form['password'] == 'password' and request.form['username'] == 'admin':
         session['logged_in'] = True
     else:
         flash('wrong password!')
